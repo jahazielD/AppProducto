@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+</head>
+
+<body onload="onBodyLoad()">
+
+<div data-role="page" id="inicio">
+  <div data-role="header">
+
+   <a href="#AgregarP" data-role="button" data-icon="plus" data-iconpos="notext">Agregar producto</a>
+
+    <h1>Catalogo de productos
+    </h1>
+    <a href="#Info" data-role="button" data-icon="info" data-iconpos="notext">Aserca de mi</a>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form>
+      <input data-type="search" id="filterCollapsibles">
+    </form>
+    <div data-role="collapsibleset" data-filter="true" data-inset="true" id="myFilter" data-input="#filterCollapsibles">
+      <div data-role="collapsible" data-filtertext="Apple" id="lista_apple">
+        <h3>Apple</h3>
+        <ul data-role="listview" data-inset="false">
+          <li><a href="#InfoP">Norway</a></li>
+          <li><a href="#InfoP">Norway</a></li>
+          <li><a href="#InfoP">Norway</a></li>
+          
+        </ul>
+        </div>
+        <div data-role="collapsible" data-filtertext="Dell"id="lista_dell">
+          <h3>Dell</h3>
+          <ul data-role="listview" data-inset="false">
+            <li><a href="#InfoP">Norway</a></li>
+          <li><a href="#InfoP">Norway</a></li>
+          <li><a href="#InfoP">Norway</a></li>
+          </ul>
+        </div>
+        <div data-role="collapsible" data-filtertext="Samsumg"id="lista_samsumg">
+          <h3>Samsumg</h3>
+          <ul data-role="listview" data-inset="false">
+            <li><a href="#InfoP">Norway</a></li>
+          <li><a href="#InfoP">Norway</a></li>
+          <li><a href="#InfoP">Norway</a></li>
+          </ul>
+        </div>
+        
+    </div>
+    
+  </div>
+<!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#Info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--pagina  Información del Producto -->
+<div data-role="page" id="InfoP">
+  <div data-role="header">
+    <h1>Informacion del Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="textinput2" id="textinput2" value=""  />
+    <input name="" type="image" src="assets/mac.jpg" width="100" height="100" />
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea1"></textarea>
+    <label for="textinput2">Presio:</label>
+    <input type="text" placeholder="Presio" name="textinput2" id="textinput1" value=""  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="textinput2" id="textinput2" value=""  />
+    <label for="textinput2">Categoria:</label>
+    <input type="text" placeholder="Categoria" name="textinput2" id="textinput3" value=""  />
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="textinput4" id="textinput2" value=""  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Enviar</a><a href="#" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Información del Producto -->
+<!--pagina  Información -->
+<div data-role="page" id="Info">
+  <div data-role="header">
+    <h1>Acerca de mi</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+    <div id="foto"><img id="foto_img" src="assets/jahaziel.jpg"/></div>
+    <div data-role="fieldcontain">
+			<label for="textinput"><b>Nombre:</b></label>
+			<p>Jahaziel David Bergez Peraza</p>
+            <br />
+			<label for="textinput"><b>Carrera:</b></label>
+			<p>Ingeniería en Sistemas de Información</p>
+            <br />
+			<label for="textinput"><b>Materia:</b></label>
+			<p>Desarrollo Aplicaciones e-commerce</p>
+            <br />
+            <label for="textinput"><b>Preferencias:</b></label>
+            
+		</div>
+		<ul>
+            	<li>Programacion Web</li>
+                <li>Programacion de escritorio en Java y .net</li>
+            </ul>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Información -->
+
+<!--  Inf -->
+<div data-role="page" id="inf" data-dialog="true">
+  <div data-role="header">
+    <h1>informacion</h1>
+  </div>
+  <div data-role="content"><p>Aplicación creada con JQuery Mobile y PhoneGap, mediante Dreamweaver CS6. Jahaziel David Bergez Peraza / Mayo de 2016</p>
+  <a href="#inicio" data-role="button">Cerrar</a></div>
+  
+</div>
+<!--fin  Inf -->
+<!--pagina  Agregar del Producto -->
+<div data-role="page" id="AgregarP">
+  <div data-role="header">
+    <h1>Agregar del Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="ti_nombre" id="textinput2" value="" id="ti_nombre" />
+    <label for="textinput2">Imagen:</label>
+	 <form method="post" id="formulario" enctype="multipart/form-data" id="fotoEdit_img">
+	    <input type="file" name="file">
+	 </form>
+	  <div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Agregar Imagen</a></div>
+
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="ti_descripción" id="ti_descripción"></textarea>
+    <label for="textinput2">Presio:</label>
+    <input type="text" placeholder="Presio" name="ti_precio" id="ti_precio" value=""  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="ti_existencia" id="ti_existencia" value=""  />
+    <label for="textinput2">Categoria:</label>
+    <div id="cajaCategorias">
+               <div data-role="fieldcontain" align="center">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_apple" value="apple" />
+                   <label for="cat_apple">Apple</label>
+                   <input type="radio" name="categoriaSel" id="cat_dell" value="dell" />
+                   <label for="cat_dell">Dell</label>
+                   <input type="radio" name="categoriaSel" id="cat_samsumg" value="samsumg" />
+                   <label for="cat_samsumg">Samsumg</label>
+                 </fieldset>                 
+               </div>          
+         </div>
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="Fecha registro" id="textinput2" value=""  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button" id="b_guardar">Agregar</a><a href="#" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Agregar del Producto -->
+
+</body>
+</html>
+
